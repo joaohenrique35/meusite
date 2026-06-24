@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Henrique Santiago | Tecnologia, Design & Educação</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Importando uma fonte elegante do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Botão de Voltar ao Topo -->
+    <button id="backToTop" title="Voltar ao topo">↑</button>
+
+    <!-- Cabeçalho e Navegação -->
+    <header>
+        <nav class="container">
+            <div class="logo">JHS.</div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <!-- Menu Hamburguer para Mobile -->
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção Hero / Apresentação -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content reveal">
+                    <h1>João Henrique Santiago</h1>
+                    <p class="subtitle">Tecnologia, Design & Educação</p>
+                    <p class="description">
+                        Professor e orientador dedicado a explorar as fronteiras entre o design de experiência do usuário e a inteligência artificial.
+                    </p>
+                    <a href="#sobre" class="btn">Conheça minha trajetória</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="sobre" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Minha Trajetória</h2>
+                <div class="about-grid reveal">
+                    <div class="about-text">
+                        <p>
+                            Como profissional apaixonado por tecnologia e design, minha missão é atuar como uma ponte entre o conhecimento técnico e a prática criativa. Com foco em <strong>UX/UI Design</strong> e <strong>Inteligência Artificial</strong>, busco não apenas criar interfaces, mas orientar a próxima geração de talentos na comunidade.
+                        </p>
+                        <p>
+                            Acredito que lecionar é a forma mais pura de inovação. Ao compartilhar experiências e mentorar novos profissionais, fortalecemos o ecossistema tecnológico com empatia e visão crítica.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Habilidades -->
+        <section id="habilidades" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title reveal">Habilidades & Interesses</h2>
+                <div class="skills-grid">
+                    <div class="skill-card reveal">
+                        <h3>UX Design</h3>
+                        <p>Foco na experiência do usuário, pesquisa e arquitetura de informação.</p>
+                    </div>
+                    <div class="skill-card reveal">
+                        <h3>UI Design</h3>
+                        <p>Criação de interfaces visuais elegantes, funcionais e acessíveis.</p>
+                    </div>
+                    <div class="skill-card reveal">
+                        <h3>Inteligência Artificial</h3>
+                        <p>Exploração de ferramentas de IA para otimização de fluxos de design e desenvolvimento.</p>
+                    </div>
+                    <div class="skill-card reveal">
+                        <h3>Educação</h3>
+                        <p>Experiência em lecionar e orientar alunos iniciantes na área de tecnologia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Projetos -->
+        <section id="projetos" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Trabalhos & Experiências</h2>
+                
+                <!-- Filtro de Projetos Simples -->
+                <div class="filter-container reveal">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                    <button class="filter-btn" data-filter="ia">IA</button>
+                    <button class="filter-btn" data-filter="ensino">Ensino</button>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card reveal" data-category="design">
+                        <div class="project-info">
+                            <h3>Redesign Educacional</h3>
+                            <p>Interface focada em plataformas de aprendizado online.</p>
+                            <span>UX/UI Design</span>
+                        </div>
+                    </div>
+                    <div class="project-card reveal" data-category="ia">
+                        <div class="project-info">
+                            <h3>IA na Criatividade</h3>
+                            <p>Workshop sobre o uso de prompts para designers.</p>
+                            <span>Inteligência Artificial</span>
+                        </div>
+                    </div>
+                    <div class="project-card reveal" data-category="ensino">
+                        <div class="project-info">
+                            <h3>Mentoria Tech</h3>
+                            <p>Programa de orientação para jovens da comunidade.</p>
+                            <span>Educação</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title reveal">Vamos conversar?</h2>
+                <div class="contact-container reveal">
+                    <p>Estou sempre aberto a novas oportunidades de ensino, palestras e colaborações em projetos inovadores.</p>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Seu Nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Seu E-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 João Henrique Santiago. Todos os direitos reservados.</p>
+            <p>Minimalista • Elegante • Experimental</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
